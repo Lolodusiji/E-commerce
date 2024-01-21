@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { BsCheckCircleFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { logoLight } from "../../assets/images";
+import logo from "../src/assets/buyoyo/buyoyo-light mode.svg";
+
 
 const SignIn = () => {
   // ============= Initial State Start here =============
@@ -44,11 +45,11 @@ const SignIn = () => {
     }
   };
   return (
-    <div className="w-full h-screen flex items-center justify-center">
+    <div className="w-full font-family['DM Sans', sans-serif] h-screen flex items-center justify-center">
       <div className="w-1/2 hidden lgl:inline-flex h-full text-white">
-        <div className="w-[450px] h-full bg-primeColor px-10 flex flex-col gap-6 justify-center">
+        <div className="w-[450px] h-full bg-[#532b1c] px-10 flex flex-col gap-6 justify-center">
           <Link to="/">
-            <img src={logoLight} alt="logoImg" className="w-28" />
+            <img src={logo} alt="logoImg" className="w-28" />
           </Link>
           <div className="flex flex-col gap-1 -mt-1">
             <h1 className="font-titleFont text-xl font-medium">
@@ -57,12 +58,12 @@ const SignIn = () => {
             <p className="text-base">When you sign in, you are with us!</p>
           </div>
           <div className="w-[300px] flex items-start gap-3">
-            <span className="text-green-500 mt-1">
+            <span className="text-[#e3daa3] mt-1">
               <BsCheckCircleFill />
             </span>
             <p className="text-base text-gray-300">
               <span className="text-white font-semibold font-titleFont">
-                Get started fast with OREBI
+                Get started fast with BUYOYO
               </span>
               <br />
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab omnis
@@ -70,12 +71,12 @@ const SignIn = () => {
             </p>
           </div>
           <div className="w-[300px] flex items-start gap-3">
-            <span className="text-green-500 mt-1">
+            <span className="text-[#e3daa3] mt-1">
               <BsCheckCircleFill />
             </span>
             <p className="text-base text-gray-300">
               <span className="text-white font-semibold font-titleFont">
-                Access all OREBI services
+                Access all BUYOYO services
               </span>
               <br />
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab omnis
@@ -83,7 +84,7 @@ const SignIn = () => {
             </p>
           </div>
           <div className="w-[300px] flex items-start gap-3">
-            <span className="text-green-500 mt-1">
+            <span className="text-[#e3daa3] mt-1">
               <BsCheckCircleFill />
             </span>
             <p className="text-base text-gray-300">
@@ -97,17 +98,17 @@ const SignIn = () => {
           </div>
           <div className="flex items-center justify-between mt-10">
             <Link to="/">
-              <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">
-                © OREBI
+              <p className="text-sm font-titleFont font-semibold text-[#e3daa3] hover:text-white cursor-pointer duration-300">
+                © Buyoyo
               </p>
             </Link>
-            <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">
+            <p className="text-sm font-titleFont font-semibold text-[#e3daa3] hover:text-white cursor-pointer duration-300">
               Terms
             </p>
-            <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">
+            <p className="text-sm font-titleFont font-semibold text-[#e3daa3] hover:text-white cursor-pointer duration-300">
               Privacy
             </p>
-            <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">
+            <p className="text-sm font-titleFont font-semibold text-[#e3daa3] hover:text-white cursor-pointer duration-300">
               Security
             </p>
           </div>
@@ -131,14 +132,14 @@ const SignIn = () => {
         ) : (
           <form className="w-full lgl:w-[450px] h-screen flex items-center justify-center">
             <div className="px-6 py-4 w-full h-[90%] flex flex-col justify-center overflow-y-scroll scrollbar-thin scrollbar-thumb-primeColor">
-              <h1 className="font-titleFont underline underline-offset-4 decoration-[1px] font-semibold text-3xl mdl:text-4xl mb-4">
+              <h1 className="text-[#532b1c] text-center font-titleFont underline underline-offset-4 decoration-[1px] font-semibold text-3xl mdl:text-4xl mb-4">
                 Sign in
               </h1>
               <div className="flex flex-col gap-3">
                 {/* Email */}
                 <div className="flex flex-col gap-.5">
-                  <p className="font-titleFont text-base font-semibold text-gray-600">
-                    Work Email
+                  <p className="text-[#532b1c] font-titleFont text-base font-semibold ">
+                    Email
                   </p>
                   <input
                     onChange={handleEmail}
@@ -157,7 +158,7 @@ const SignIn = () => {
 
                 {/* Password */}
                 <div className="flex flex-col gap-.5">
-                  <p className="font-titleFont text-base font-semibold text-gray-600">
+                  <p className=" text-[#532b1c] font-titleFont text-base font-semibold ">
                     Password
                   </p>
                   <input
@@ -177,7 +178,7 @@ const SignIn = () => {
 
                 <button
                   onClick={handleSignUp}
-                  className="bg-primeColor hover:bg-black text-gray-200 hover:text-white cursor-pointer w-full text-base font-medium h-10 rounded-md  duration-300"
+                  className="bg-[#532b1c] text-[#e3daa3] hover:bg-[#e3daa3] text-gray-200 hover:text-[#532b1c] cursor-pointer w-full text-base font-medium h-10 rounded-md  duration-300"
                 >
                   Sign In
                 </button>
