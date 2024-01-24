@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaFacebook, FaYoutube, FaLinkedin, FaGithub } from "react-icons/fa";
 import FooterListTitle from "./FooterListTitle";
-import payment from "../../public/images/payment.png";
+import payment from "../../public/images/products/payment.png";
 // import Image from "../../designLayouts/Image";
 
 const Footer = () => {

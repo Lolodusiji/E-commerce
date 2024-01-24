@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import {Route, Routes} from 'react-router-dom';
 import Homepage from "./Homepage/Homepage"
+import SignIn from "./Signin"
+import SignUp from "./Signup";
+
 
 import './App.css'
 
@@ -11,6 +14,9 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/Login" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+
         {/* <Route path="/" element={<Herosection />} /> */}
       </Routes>
     </>

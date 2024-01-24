@@ -132,16 +132,16 @@ const SignUp = () => {
   return (
     <div className="w-full font-family['DM Sans', sans-serif] h-screen flex items-center justify-start">
       <div className="w-1/2 hidden lgl:inline-flex h-full text-white">
-        <div className="w-[450px] h-full bg-[#532b1c] px-10 flex flex-col gap-6 justify-center">
+        <div className="w-[450px] h-full bg-[#532b1c] px-10 flex flex-col gap-2 justify-center">
           <Link to="/">
             <img src={logo} alt="logoImg" className="w-28" />
           </Link>
-          <div className="flex flex-col gap-1 -mt-1">
-            <h1 className="font-titleFont text-xl font-medium">
+          {/* <div className="flex flex-col gap-1 -mt-1"> */}
+            {/* <h1 className="font-titleFont text-xl font-medium">
               Get started for free
-            </h1>
-            <p className="text-base">Create your account to access more</p>
-          </div>
+            </h1> */}
+            {/* <p className="text-base text-xl">Create your account to access more</p>
+          </div> */}
           <div className="w-[300px] flex items-start gap-3">
             <span className="text-[#e3daa3] mt-1">
               <BsCheckCircleFill />
@@ -197,13 +197,14 @@ const SignUp = () => {
           </div>
         </div>
       </div>
+
       <div className="w-full lgl:w-[500px] h-full flex flex-col justify-center">
         {successMsg ? (
           <div className="w-[500px]">
             <p className="w-full px-4 py-10 text-green-500 font-medium font-titleFont">
               {successMsg}
             </p>
-            <Link to="/signin">
+            <Link to="/Login">
               <button
                 className="w-full h-10 bg-[#532b1c]  rounded-md text-gray-200 text-base font-titleFont font-semibold 
             tracking-wide hover:bg-black hover:text-white duration-300"
@@ -214,7 +215,7 @@ const SignUp = () => {
           </div>
         ) : (
           <form className="w-full lgl:w-[500px] h-screen flex items-center justify-center">
-            <div className="px-6 py-4 w-full h-[96%] flex flex-col justify-start overflow-y-scroll scrollbar-thin scrollbar-thumb-primeColor">
+            <div className="px-6 py-4 w-full h-[96%] flex flex-col justify-start overflow-y-none scrollbar-thin scrollbar-thumb-primeColor">
               <h1 className=" text-[#532b1c] text-center font-titleFont underline underline-offset-4 decoration-[1px] font-semibold text-2xl mdl:text-3xl mb-4">
                 Create your account
               </h1>
@@ -315,7 +316,7 @@ const SignUp = () => {
                   )}
                 </div>
                 {/* City */}
-                <div className="flex flex-col gap-.5">
+                {/* <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-[#532b1c]">
                     City
                   </p>
@@ -332,8 +333,8 @@ const SignUp = () => {
                       {errCity}
                     </p>
                   )}
-                </div>
-                {/* Country */}
+                </div> */}
+                {/* Country
                 <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-[#532b1c]">
                     Country
@@ -351,9 +352,9 @@ const SignUp = () => {
                       {errCountry}
                     </p>
                   )}
-                </div>
+                </div> */}
                 {/* Zip code */}
-                <div className="flex flex-col gap-.5">
+                {/* <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-[#532b1c]">
                     Zip/Postal code
                   </p>
@@ -370,7 +371,7 @@ const SignUp = () => {
                       {errZip}
                     </p>
                   )}
-                </div>
+                </div> */}
                 {/* Checkbox */}
                 <div className="flex items-start mdl:items-center gap-2">
                   <input
@@ -389,8 +390,8 @@ const SignUp = () => {
                   className={`${
                     checked
                       ? "bg-[#532b1c] hover:bg-[#e3daa3] hover:text-[#532b1c] cursor-pointer"
-                      : "bg-gray-500 hover:bg-[#e3daa3] hover:text-[#532b1c] cursor-none"
-                  } w-full bg-[#532b1c] text-[#e3daa3] text-base font-medium h-10 rounded-md hover:text-white duration-300`}
+                      : " hover:bg-[#e3daa3] hover:text-[#532b1c] cursor-none"
+                  } w-full bg-[#532b1c] text-[#e3daa3] text-base font-medium h-10 rounded-md hover:duration-300`}
                 >
                   Create Account
                 </button>

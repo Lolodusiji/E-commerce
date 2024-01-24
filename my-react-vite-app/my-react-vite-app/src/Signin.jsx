@@ -47,16 +47,16 @@ const SignIn = () => {
   return (
     <div className="w-full font-family['DM Sans', sans-serif] h-screen flex items-center justify-center">
       <div className="w-1/2 hidden lgl:inline-flex h-full text-white">
-        <div className="w-[450px] h-full bg-[#532b1c] px-10 flex flex-col gap-6 justify-center">
+        <div className="w-[450px] h-full bg-[#532b1c] px-10 flex flex-col gap-2 justify-center">
           <Link to="/">
             <img src={logo} alt="logoImg" className="w-28" />
           </Link>
-          <div className="flex flex-col gap-1 -mt-1">
+          {/* <div className="flex flex-col gap-1 -mt-1">
             <h1 className="font-titleFont text-xl font-medium">
               Stay sign in for more
             </h1>
             <p className="text-base">When you sign in, you are with us!</p>
-          </div>
+          </div> */}
           <div className="w-[300px] flex items-start gap-3">
             <span className="text-[#e3daa3] mt-1">
               <BsCheckCircleFill />
